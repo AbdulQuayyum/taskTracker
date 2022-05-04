@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Tasks from '../components/Tasks'
+import Tasks from '../components/TasksComp'
 import AddTask from '../components/AddTask'
 export default {
-  name: 'Home',
+  name: 'HomeViews',
   props: {
     showAddTask: Boolean,
   },

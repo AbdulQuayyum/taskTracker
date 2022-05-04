@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button
+    <ButtonComp
       v-show="homePage"
       @btn-click="$emit('toggle-add-task')"
       :text="showAddTask ? 'Close' : 'Add Task'"
@@ -11,16 +11,16 @@
 </template>
 
 <script>
-import Button from './Button'
+import ButtonComp from './ButtonComp'
 
 export default {
-  name: 'Header',
+  name: 'HeaderComp',
   props: {
     title: String,
     showAddTask: Boolean,
   },
   components: {
-    Button,
+    ButtonComp,
   },
   computed: {
     homePage() {
